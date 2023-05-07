@@ -1,4 +1,4 @@
-
+<img src='https://cdn.pixabay.com/photo/2014/06/11/17/00/food-366875_960_720.jpg' />
 
 # mini project 주제 : Grain KIOSK 
 음식점에서 메뉴 주문을 관리하는 프로그램
