@@ -1,7 +1,7 @@
 <img src=food-g8bdad39a1_1920.jpg />
 
 # mini project 주제 : Grain KIOSK 
-음식점에서 메뉴 주문을 관리하는 프로그램
+음식점에서 메뉴 주문 관리하는 프로그램
 
 # mini project 에 대한 소개
 - 복잡하고 주문을 간편하게 만들어주는 Grain KIOSK 입니다.
