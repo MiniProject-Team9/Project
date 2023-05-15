@@ -31,7 +31,11 @@ int menu;
     return menu;
 }
 int selectDateNo(Product *s[],int count){//제품번호 선택 함수
-
+int no;
+  listProduct(s, count);
+  printf("번호는 (취소 :0)? ");
+  scanf("%d", &no);
+  return no;
 }
 void saveData(Product *s[],int count){//파일 저장 함수
 
