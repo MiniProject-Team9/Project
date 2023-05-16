@@ -1,6 +1,11 @@
 #include "function.h"
 void addProduct(Product *s){//제품 추가 함수
-
+  printf("제품이름: ");
+  scanf("%s",s->name);
+  printf("종류 : ");
+  scanf("%s",s->kind);
+  printf("가격: ");
+  scanf("%d",&s->price);
 }
 void readProduct(Product s){//하나의 제품 정보 읽는 함수
 
