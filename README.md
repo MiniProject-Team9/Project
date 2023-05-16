@@ -27,10 +27,10 @@
   - Repo Owner
   - 부가 기능 구현
   - WIKI 관리
-  - 코드 관리 (오류수정) 
+  - 코드 관리 (오류수정)
   - 로고 제작
  ### 류정현
-  - Repo Owner
+  - Contributer
   - CRUD 구현
   - 부가 기능 구현
   - WIKi 관리
