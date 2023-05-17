@@ -11,6 +11,12 @@ void readProduct(Product s){//하나의 제품 정보 읽는 함수
 
 }
 void updateProduct(Product *s){//제품 수정 함수
+  printf("제품이름: ");
+  scanf("%s",s->name);
+  printf("종류 : ");
+  scanf("%s",s->kind);
+  printf("가격: ");
+  scanf("%d",&s->price);
 
 }
 void listProduct(Product *s[], int count){//전체 제품 정보를 읽는 함수
