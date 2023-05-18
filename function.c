@@ -20,7 +20,15 @@ void updateProduct(Product *s){//제품 수정 함수
 
 }
 void listProduct(Product *s[], int count){//전체 제품 정보를 읽는 함수
-
+printf("NO 종류 음식이름  가격 맵기단계\n");
+  printf("===============================\n");
+    for (int i = 0; i < count; i++) {
+    if (s[i] == NULL)
+      continue;
+    printf("%2d ", i + 1);
+    readProduct(*s[i]);
+  }
+  printf("\n");
 }
 int selectMenu(){//메뉴 호출 함수
 int menu;
