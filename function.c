@@ -32,7 +32,7 @@ printf("NO 종류 음식이름  가격 맵기단계\n");
 }
 int selectMenu(){//메뉴 호출 함수
 int menu;
-    printf("\n ┌───▣─▣─CUBE_KIOSK─▣─▣───┐\n");
+    printf("\n ┌───▣─▣─GRAIN_KIOSK─▣─▣───┐\n");
     printf("\n");
     printf("┌▣    1. 메뉴조회        ▣┐\n");
     printf("┌▣    2. 메뉴추가        ▣┐\n");
