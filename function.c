@@ -8,7 +8,7 @@ void addProduct(Product *s){//제품 추가 함수
   scanf("%d",&s->price);
 }
 void readProduct(Product s){//하나의 제품 정보 읽는 함수
-
+  printf("%s %s %d %d\n",s.kind,s.name,s.price,s.step);
 }
 void updateProduct(Product *s){//제품 수정 함수
   printf("제품이름: ");
