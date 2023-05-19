@@ -19,6 +19,7 @@ void updateProduct(Product *s){//제품 수정 함수
   scanf("%d",&s->price);
 
 }
+//delete 함수는 따로 만들지 않고 main에서 사용하게 했다.
 void listProduct(Product *s[], int count){//전체 제품 정보를 읽는 함수
 printf("NO 종류 음식이름  가격 맵기단계\n");
   printf("===============================\n");
