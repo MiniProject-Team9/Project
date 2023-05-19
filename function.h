@@ -5,9 +5,10 @@
 typedef struct{
 	char name[30];//제품 이름
 	char kind[20];//제품 종류
+	int step;
 	int price;//제품 가격
-	int step=0;//맵기 단계
 }Product;
+
 void addProduct(Product *s);//제품 추가 함수
 void readProduct(Product s);//하나의 제품 정보 읽는 함수
 void updateProduct(Product *s);//제품 수정 함수

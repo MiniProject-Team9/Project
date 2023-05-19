@@ -16,10 +16,10 @@ int main(){
         continue;
       }
     if (menu == 1) {
-      listBook(sp, index);
+      listProduct(p, index);
     }  else if (menu == 2) {
       p[index] = (Product *)malloc(sizeof(Product));
-      addBook(p[index++]);
+      addProduct(p[index++]);
       count++;
     } else if (menu == 3) {
       int no = selectDateNo(p, index);
@@ -27,7 +27,7 @@ int main(){
         printf("=> 취소됨!\n");
         continue;
       }
-      updateBook(p[no - 1]);
+      updateProduct(p[no - 1]);
     } else if (menu == 4) {
       int no = selectDateNo(p, index);
       if (no == 0) {
