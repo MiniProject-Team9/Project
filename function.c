@@ -11,6 +11,16 @@ void addFood(Food *s){//음식 추가 함수
 void readFood(Food s){//하나의 음식 정보 읽는 함수
   printf("%s %s %d %d\n",s.type,s.name,s.price,s.step);
 }
+void deleteFood(Food *s){
+    int deleteok;
+      printf("정말로 삭제하시겠습니까?(삭제 :1)");
+      scanf("%d", &deleteok);
+      if (deleteok == 1) {
+        free(s);
+        s = NULL;
+        printf("=> 삭제됨!\n");
+      }
+}
 void updateFood(Food *s){//음식 정보 수정 함수
   printf("음식 이름: ");
   scanf("%[^\n]s",s->name);

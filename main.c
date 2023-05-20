@@ -38,15 +38,8 @@ int main(){
         printf("=> 취소됨!\n");
         continue;
       }
-      int deleteok;
-      printf("정말로 삭제하시겠습니까?(삭제 :1)");
-      scanf("%d", &deleteok);
-      if (deleteok == 1) {
-        free(f[no - 1]);
-        f[no - 1] = NULL;
-        printf("=> 삭제됨!\n");
         count--;
-      }
+      
     }
     else if(menu==5){
       saveData(f,index);
