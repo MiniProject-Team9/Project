@@ -8,6 +8,7 @@ int main(){
 	count=index;
 	 while (1) {
     menu = selectMenu();
+    getchar();
     if (menu == 0)
       break;
     if( menu==1 || menu==3||menu==4 ||menu==5||menu==6||menu==7)

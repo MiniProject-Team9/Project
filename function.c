@@ -91,6 +91,27 @@ fp=fopen("Product.txt","rt");
     return i;
 }
 void searchName(Product *s[],int count){//제품 이름 찾는 함수
+  char tname[50];
+  int check=0;
+  printf("\n 검색할 음식은? ");
+  scanf("%s",tname);
+  printf("NO 종류 음식이름  가격 맵기단계\n");
+  printf("===============================\n");
+  
+  for(int i=0; i<count; i++){
+    if(s[i]==NULL) continue;
+    if(strstr(s[i]->name,tname)){
+      printf("%2d ",i+1);
+      readProduct(*s[i]);
+      check++;
+    }
+    else if(strstr(s[i]->name,tname)){
+      printf("%2d ",i+1);
+      readProduct(*s[i]);
+      check++;
+    }
+  }
+    if(check==0)printf("=> 검색 결과 없음\n");
 
 }
 void searchLowPrice(Product *s[],int count){//일정 가격 이하의 제품 찾는 함수
