@@ -34,7 +34,7 @@ void listFood(Food *s[], int count){//전체 음식 정보를 읽는 함수
   printf("NO 종류 음식이름  가격 맵기단계\n");
   printf("===============================\n");
   for (int i = 0; i < count; i++) {
-    if (s[i] == NULL) continue;
+    if (s[i]->price == -1) continue;
     printf("%2d ", i + 1);
     readFood(*s[i]);
   }
@@ -70,7 +70,7 @@ void saveData(Food *s[],int count){//파일 저장 함수
   int i=0;
   fp=fopen("Food.txt","wt");
   for(;i<count;i++){
-    if(s[i]== NULL) continue;
+    if(s[i] -> price == -1) continue;
     fprintf(fp,"%s %d %d %s\n",s[i]->type,s[i]->price,s[i]->step,s[i]->name);
   }
   fclose(fp);
@@ -106,7 +106,7 @@ void searchName(Food *s[],int count){//음식 이름 검색 함수
   printf("===============================\n");
   
   for(int i=0; i<count; i++){
-    if(s[i]==NULL) continue;
+    if(s[i]->price==-1) continue;
     if(strstr(s[i]->name,tname)){
       printf("%2d ",i+1);
       readFood(*s[i]);
@@ -130,7 +130,7 @@ void searchType(Food *s[],int count){//음식 종류 검색 함수
   printf("===============================\n");
   
   for(int i=0; i<count; i++){
-    if(s[i]==NULL) continue;
+    if(s[i]->price==-1) continue;
     if(strstr(s[i]->type,tname)){
       printf("%2d ",i+1);
       readFood(*s[i]);

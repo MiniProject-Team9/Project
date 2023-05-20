@@ -38,7 +38,8 @@ int main(){
         printf("=> 취소됨!\n");
         continue;
       }
-        count--;
+      deleteFood(f[no-1]);
+      count--;
       
     }
     else if(menu==5){
