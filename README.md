@@ -32,5 +32,4 @@
   - Contributer
   - CRUD 구현
   - 부가 기능 구현
-  - WIKi 관리
   - 코드 관리 (오류 수정)
