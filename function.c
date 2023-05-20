@@ -161,5 +161,12 @@ void searchLowPrice(Product *s[],int count){//일정 가격 이하의 제품 찾
     if(check==0)printf("=> 검색 결과 없음\n");
 }
 void setstep(Product *s[],int count){//맵기 단계를 설정하는 함수
-
+int a;
+    printf("맵기 단계 설정할 메뉴를 고르세요!\n");
+    int no=selectDateNo(s,count);
+    printf("맵기 단계는(1,2,3) :");
+    scanf("%d",&a);
+    s[no-1]->step=a;
+    printf("설정 되었습니다.\n"); 
 }
+
