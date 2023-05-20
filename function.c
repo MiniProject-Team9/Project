@@ -1,18 +1,19 @@
 #include "function.h"
 void addProduct(Product *s){//제품 추가 함수
   printf("제품이름: ");
-  scanf("%s",s->name);
+  scanf("%[^\n]s",s->name);
   printf("종류 : ");
   scanf("%s",s->kind);
   printf("가격: ");
   scanf("%d",&s->price);
+  s->step=0;
 }
 void readProduct(Product s){//하나의 제품 정보 읽는 함수
   printf("%s %s %d %d\n",s.kind,s.name,s.price,s.step);
 }
 void updateProduct(Product *s){//제품 수정 함수
   printf("제품이름: ");
-  scanf("%s",s->name);
+  scanf("%[^\n]s",s->name);
   printf("종류 : ");
   scanf("%s",s->kind);
   printf("가격: ");
@@ -58,10 +59,36 @@ int no;
   return no;
 }
 void saveData(Product *s[],int count){//파일 저장 함수
+FILE *fp;
+    int i=0;
+    fp=fopen("Product.txt","wt");
+    for(;i<count;i++){
+        if(s[i]== NULL) continue;
+        fprintf(fp,"%s %d %d %s\n",s[i]->kind,s[i]->price,s[i]->step,s[i]->name);
+    }
+    fclose(fp);
+    printf("저장됨!\n");
 
 }
 int loadData(Product *s[]){//파일 로드 함수
-
+FILE *fp;
+int i=0;
+fp=fopen("Product.txt","rt");
+    if(fp==NULL){
+        printf("\n=> 파일 없음\n");
+        return 0;
+     }
+    for(;i<20;i++){
+        s[i]=(Product *)malloc(sizeof(Product));
+        fscanf(fp," %s",s[i]->kind);
+        if(feof(fp)) break;
+        fscanf(fp," %d",&s[i]->price);
+        fscanf(fp," %d",&s[i]->step);
+        fscanf(fp,"%[^\n]s",s[i]->name);
+    }
+    fclose(fp);
+    printf("=> 로딩 성공!\n");
+    return i;
 }
 void searchName(Product *s[],int count){//제품 이름 찾는 함수
 
