@@ -1,3 +1,4 @@
+## Mini Project
 <img src=food-g8bdad39a1_1920.jpg />
 
 # 🌾GRAIN KIOSK 주제
