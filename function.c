@@ -30,7 +30,7 @@ void updateFood(Food *s){//음식 정보 수정 함수
 
 }
 void listFood(Food *s[], int count){//전체 음식 정보를 읽는 함수
-  printf(“\n━━━━━━━━━⊱GRAIN's Menu ⊰━━━━━━━━\n");
+  printf("\n━━━━━━━━━⊱GRAIN's Menu ⊰━━━━━━━━\n");
   printf("NO 종류 음식이름  가격 맵기단계\n");
   for (int i = 0; i < count; i++) {
     if (s[i]->price == -1) continue;
