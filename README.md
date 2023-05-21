@@ -47,7 +47,7 @@ void setstep(Food *s[],int count);//맵기 단계를 설정하는 함수
 ## 팀원
  ### 송민영 [minyoung10 Github Link](https://github.com/minyoung10)
   - Repo Owner
-  - WIKI 관리
+  - Github 및 WIKI 관리
   - 부가 기능 구현
   - 코드 관리 (오류수정)
 
