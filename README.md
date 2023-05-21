@@ -1,5 +1,6 @@
 ## Mini Project
-<img src=food-g8bdad39a1_1920.jpg />
+![image](https://github.com/MiniProject-Team9/Project/assets/130198459/5179d416-0cdf-44b5-a6bd-803456567d7a)
+
 
 # 🌾GRAIN KIOSK 주제
 관리자가 음식점 키오스크 데이터베이스를 관리하는 프로그램
