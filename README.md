@@ -36,7 +36,7 @@ void searchName(Food *s[],int count);//음식 이름 검색 함수
 void searchType(Food *s[],int count);//음식 종류 검색 함수
 void setstep(Food *s[],int count);//맵기 단계를 설정하는 함수
 
-
+```
 
 # 🌾개발환경 및 언어
 - git
