@@ -54,7 +54,6 @@ int selectMenu(){//메뉴 호출 함수
   printf("┊   0. 종료            ┊\n");
   printf("\n •─────GRAIN_KIOSK─────•\n");
   printf("\n=> 원하는 메뉴는? ");
-  printf("=> 원하는 메뉴는? ");
   scanf("%d", &menu);
   return menu;
 }
