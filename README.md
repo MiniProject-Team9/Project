@@ -22,13 +22,13 @@
 
 # 🌾팀소개 및 팀원이 맡은 역할
 ## 팀원
- ### 송민영
+ ### 송민영 [minyoung10 Github Link](https://github.com/minyoung10)
   - Repo Owner
   - WIKI 관리
   - 부가 기능 구현
   - 코드 관리 (오류수정)
 
- ### 류정현
+ ### 류정현 [poly0112 Github Link](https://github.com/poly0112)
   - Contributer
   - CRUD 구현
   - 부가 기능 구현
