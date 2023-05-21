@@ -30,8 +30,8 @@ void updateFood(Food *s){//음식 정보 수정 함수
 
 }
 void listFood(Food *s[], int count){//전체 음식 정보를 읽는 함수
+  printf(“\n━━━━━━━━━⊱GRAIN's Menu ⊰━━━━━━━━\n");
   printf("NO 종류 음식이름  가격 맵기단계\n");
-  printf("===============================\n");
   for (int i = 0; i < count; i++) {
     if (s[i]->price == -1) continue;
     printf("%2d ", i + 1);
@@ -41,18 +41,19 @@ void listFood(Food *s[], int count){//전체 음식 정보를 읽는 함수
 }
 int selectMenu(){//메뉴 호출 함수
   int menu;
-  printf("\n ┌───▣─▣─GRAIN_KIOSK─▣─▣───┐\n");
+  printf("\n •─────GRAIN_KIOSK─────•\n");
   printf("\n");
-  printf("┌▣    1. 메뉴 조회        ▣┐\n");
-  printf("┌▣    2. 메뉴 추가        ▣┐\n");
-  printf("┌▣    3. 메뉴 수정        ▣┐\n");
-  printf("┌▣    4. 메뉴 삭제        ▣┐\n");
-  printf("┌▣    5. 파일 저장        ▣┐\n");
-  printf("┌▣    6. 메뉴 이름 검색    ▣┐\n");
-  printf("┌▣    7. 음식 종류 검색   ▣┐\n");
-  printf("┌▣    8. 맵기 단계 조정   ▣┐\n");
-  printf("┌▣    0. 종료            ▣┐\n");
-  printf("\n └───▣─▣─CUBE_KIOSK─▣─▣───┘\n\n");
+  printf("┊   1. 메뉴 조회       ┊\n");
+  printf("┊   2. 메뉴 추가       ┊\n");
+  printf("┊   3. 메뉴 수정       ┊\n");
+  printf("┊   4. 메뉴 삭제       ┊\n");
+  printf("┊   5. 파일 저장       ┊\n");
+  printf("┊   6. 메뉴 이름 검색  ┊\n");
+  printf("┊   7. 음식 종류 검색  ┊\n");
+  printf("┊   8. 맵기 단계 조정  ┊\n");
+  printf("┊   0. 종료            ┊\n");
+  printf("\n •─────GRAIN_KIOSK─────•\n");
+  printf("\n=> 원하는 메뉴는? ");
   printf("=> 원하는 메뉴는? ");
   scanf("%d", &menu);
   return menu;
@@ -101,8 +102,8 @@ void searchName(Food *s[],int count){//음식 이름 검색 함수
   int check=0;
   printf("\n 검색할 음식은? ");
   scanf("%[^\n]s",tname);
+  printf("\n━━━━━━━━━⊱GRAIN's Menu ⊰━━━━━━━━\n");
   printf("NO 종류 음식이름  가격 맵기단계\n");
-  printf("===============================\n");
   
   for(int i=0; i<count; i++){
     if(s[i]->price==-1) continue;
@@ -125,9 +126,8 @@ void searchType(Food *s[],int count){//음식 종류 검색 함수
   int check=0;
   printf("\n 검색할 음식 종류는? ");
   scanf("%s",tname);
+  printf("\n━━━━━━━━━⊱GRAIN's Menu ⊰━━━━━━━━\n");
   printf("NO 종류 음식이름  가격 맵기단계\n");
-  printf("===============================\n");
-  
   for(int i=0; i<count; i++){
     if(s[i]->price==-1) continue;
     if(strstr(s[i]->type,tname)){
