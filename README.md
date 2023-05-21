@@ -36,7 +36,6 @@ void searchName(Food *s[],int count);//음식 이름 검색 함수
 void searchType(Food *s[],int count);//음식 종류 검색 함수
 void setstep(Food *s[],int count);//맵기 단계를 설정하는 함수
 
-```
 
 
 # 🌾개발환경 및 언어
@@ -55,3 +54,5 @@ void setstep(Food *s[],int count);//맵기 단계를 설정하는 함수
   - Contributer
   - CRUD 구현
   - 부가 기능 구현
+  
+  ![image](https://github.com/MiniProject-Team9/Project/assets/130198459/c2b95523-e655-4a71-a260-dfdf8a954abf)
