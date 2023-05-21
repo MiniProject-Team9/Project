@@ -16,10 +16,6 @@
 # 🌾GRAIN KIOSK CRUD
 > 코드 및 기능
 ```c
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
 typedef struct{
 	char name[30];//음식 이름
 	char type[20];//음식 종류
