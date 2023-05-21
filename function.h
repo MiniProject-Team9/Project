@@ -12,6 +12,7 @@ typedef struct{
 void addFood(Food *s);//음식 추가 함수
 void readFood(Food s);//하나의 음식 정보 읽는 함수
 void updateFood(Food *s);//음식 수정 함수
+void deleteFood(Food *s);//음식 정보 삭제 함수
 void listFood(Food *s[], int count);//전체 음식 정보를 읽는 함수
 int selectMenu();//메뉴 호출 함수
 int selectDateNo(Food *s[],int count);//음식번호 선택 함수

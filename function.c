@@ -16,8 +16,7 @@ void deleteFood(Food *s){
       printf("정말로 삭제하시겠습니까?(삭제 :1)");
       scanf("%d", &deleteok);
       if (deleteok == 1) {
-        free(s);
-        s = NULL;
+        s->price=-1;
         printf("=> 삭제됨!\n");
       }
 }
