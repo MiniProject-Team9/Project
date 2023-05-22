@@ -13,7 +13,7 @@ int main(){
       break;
     if( menu==1 || menu==3||menu==4 ||menu==5||menu==6||menu==7||menu==8)
       if(count==0){
-        printf("아래 번호 중 메뉴를 다시 선택해주세요.\n");
+        printf("현재 데이터가 없습니다. 메뉴를 추가해주세요!\n");
         continue;
       }
     if (menu == 1) {
@@ -49,7 +49,7 @@ int main(){
     }else if(menu==7){
       searchType(f,index);
     }else if(menu==8){
-	    setstep(f,index);
+	    setStep(f,index);
     }
   }
   printf("종료됨!\n");
