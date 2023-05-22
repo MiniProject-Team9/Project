@@ -143,7 +143,7 @@ void searchType(Food *s[],int count){//음식 종류 검색 함수
     if(check==0)printf("=> 검색 결과 없음\n");
 
 }
-void setstep(Food *s[],int count){//맵기 단계를 설정하는 함수
+void setStep(Food *s[],int count){//맵기 단계를 설정하는 함수
   int a;
   printf("맵기 단계 설정할 메뉴를 고르세요!\n");
   int no=selectDateNo(s,count);
