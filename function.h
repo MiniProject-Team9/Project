@@ -20,5 +20,5 @@ void saveData(Food *s[],int count);//파일 저장 함수
 int loadData(Food *s[]);//파일 로드 함수
 void searchName(Food *s[],int count);//음식 이름 검색 함수
 void searchType(Food *s[],int count);//음식 종류 검색 함수
-void setstep(Food *s[],int count);//맵기 단계를 설정하는 함수
+void setStep(Food *s[],int count);//맵기 단계를 설정하는 함수
 
